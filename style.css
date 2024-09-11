@@ -1,0 +1,301 @@
+/* Font sourced from https://www.fontspace.com/mintsoda-lime-green-font-f92418 */
+@font-face {
+  font-family: MintsodaLimeGreen-Regular;
+  src: url(fonts/MintsodaLimeGreen-Regular.ttf)
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+
+  /* adjust button for responsiveness */
+  button {
+    width: 90%;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+
+  /* adjust button for responsiveness */
+  button {
+    width: 90%;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 720px) {
+
+  /* adjust capybara for responsiveness */
+  img.capybara:hover {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* adjust capybara for responsiveness */
+  img.capybara {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* adjust capybara:hover for responsiveness */
+  img.capybara:hover {
+    width: 100%; /* no hover effect */
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+
+  /* adjust button for responsiveness */
+
+  button {
+    width: 90%;
+    font-size: 25px;
+  }
+}
+
+/* Cursor sourced from https://www.cursors-4u.com */
+* {
+  cursor: url(cursors/jack-skellington.cur), auto !important;
+}
+
+body {
+  background-color: #131419;
+}
+
+h1 {
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2, h3 {
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  font-size: 25px;
+}
+p, a {
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a.info-links
+{
+  font-family: 'Nintendo DS BIOS', sans-serif;
+}
+
+a.bottom-links
+{
+  font-size: 35px;
+}
+
+a.bottom-links:hover
+{
+  font-size: 50px;
+}
+
+a.bottom-links:visited
+{
+  color: white;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1000px;
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 30px;
+  background-color: #262833; /* #0d0e10 */
+  border: none;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  transition: all 150ms ease-in-out;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+hr {
+  border-top: 0.5px dashed #ffffff;
+  border-bottom: 0.5px dashed #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul
+{
+  text-align: center;
+  padding-left: 0;
+  color:white;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+li:hover
+{
+background-color: black;
+}
+
+a:hover
+{
+  background-color: #131419;
+  color: white;
+}
+
+a:visited
+{
+ color: #67595e;
+}
+
+li:visited
+{
+  color:white
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0px;
+  transition: all 150ms ease-in-out;
+}
+
+hr {
+  border-top: 0.5px dashed #ffffff;
+  border-bottom: 0.5px dashed #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link{
+  color: #8f7d84;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.capybara:hover
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 550px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~CLASSES AND IDS~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/profile/images/starr.gif");
+  background-repeat: repeat;
+}
+
+.jp-script {
+  font-family: MintsodaLimeGreen-Regular;
+  font-size: 18px;
+}
+
+.title {
+  border-radius: 5px;
+  background-color: #262833;
+ /*#303340*/
+}
+
+.subtitle {
+  border-radius: 5px;
+  background-color: #303340;
+}
+
+.title-white {
+  border-radius: 5px;
+  background-color: #444753;
+  /*#444753 // a49393*/
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box-info-white
+{
+  border-radius: 5px;
+  background-color: rgba(255,255,255, 0.7);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 10px
+}
+
+.img-circle {
+  border-radius: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
