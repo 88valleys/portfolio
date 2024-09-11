@@ -246,7 +246,7 @@ img.capybara:hover
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("/profile/images/starr.gif");
+  background-image: url("images/starr.gif");
   background-repeat: repeat;
 }
 
