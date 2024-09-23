@@ -1,35 +1,51 @@
-// This is where it all goes :)
+// // This is where it all goes :)
 
-// Array of strings to type out
-const items = ["I'm a developer", "I am a designer", "I love coding"];
+// Typewriter function in hero banner
+document.addEventListener('DOMContentLoaded', function() {
+    const dynamicText = document.querySelector("h1 span");
+    const words = ["Senie 👋"];
 
-// Function to type out each character
-function typeWriter(text, i, callback) {
-    if (i < text.length) {
-        document.getElementById("typewriter").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-        setTimeout(function() {
-            typeWriter(text, i + 1, callback);
-        }, 100);
-    } else if (typeof callback == 'function') {
-        setTimeout(callback, 700);
+    if (!dynamicText) {
+        console.error("Element not found");
+        return;
     }
-}
 
-// Function to start the typing effect
-function startTextAnimation(i) {
-    if (typeof items[i] == 'undefined') {
-        setTimeout(function() {
-            startTextAnimation(0);
-        }, 20000);
+    // Function to type out each character
+    function typeWriter(text, i, callback) {
+        if (i < text.length) {
+            dynamicText.innerHTML = text.substring(0, i + 1) + '<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>';
+            setTimeout(function() {
+                typeWriter(text, i + 1, callback);
+            }, 100);
+        } else if (typeof callback == 'function') {
+            setTimeout(callback, 700);
+        }
     }
-    if (i < items.length) {
-        typeWriter(items[i], 0, function() {
-            startTextAnimation(i + 1);
+
+        // // Function to delete each character
+        // function deleteWriter(text, i, callback) {
+        //     if (i >= 0) {
+        //         dynamicText.innerHTML = text.substring(0, i) + '<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>';
+        //         setTimeout(function() {
+        //             deleteWriter(text, i - 1, callback);
+        //         }, 100);
+        //     } else if (typeof callback == 'function') {
+        //         setTimeout(callback, 700);
+        //     }
+        // }
+
+    // Function to start the typing effect
+    function startTextAnimation(i) {
+        if (i >= words.length) {
+            i = 0;
+        }
+        typeWriter(words[i], 0, function() {
+            deleteWriter(words[i], words[i].length, function() {
+                startTextAnimation(i + 1);
+            });
         });
     }
-}
 
-// Start the typing effect
-document.addEventListener('DOMContentLoaded', function(event) {
+    // Start the typing effect
     startTextAnimation(0);
 });
