@@ -1,34 +1,34 @@
 - name: TokyoScene
   description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.
-  image: projects/tokyoscene.png
+  image: projects/TokyoSceneMockup.png
   url: https://www.tokyoscene.me
   github: https://github.com/88valleys/TokyoScene
   online: true
 
 - name: USpeak4Me
   description: USpeak4Me is a marketplace app using Ruby on Rails, designed to connect foreign residents in Japan with professional interpreters.
-  image: projects/uspeak4me.png
+  image: projects/USpeak4MeMockup.png
   url: https://uspeak4me-c92c1d2ed740.herokuapp.com/
   github: https://github.com/88valleys/USpeak4Me
   online: true
 
-- name: Airbnb
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
-  online: true
+# - name: Airbnb
+#   description: Decent description of the app
+#   image: projects/placeholder.png
+#   url: https://www.google.com
+#   github: https://www.github.com
+#   online: true
 
-- name: Final project
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
-  online: true
+# - name: Final project
+#   description: Decent description of the app
+#   image: projects/placeholder.png
+#   url: https://www.google.com
+#   github: https://www.github.com
+#   online: true
 
-- name: Yelp
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
-  online: false
+# - name: Yelp
+#   description: Decent description of the app
+#   image: projects/placeholder.png
+#   url: https://www.google.com
+#   github: https://www.github.com
+#   online: false
