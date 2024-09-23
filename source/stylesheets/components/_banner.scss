@@ -1,3 +1,39 @@
 .banner {
   height: 100vh;
 }
+
+/* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+
+}
+
+h1 span {
+  color: #BD53ED;
+  position: relative;
+}
+
+h1 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #BD53ED;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
+}
