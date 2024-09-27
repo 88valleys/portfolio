@@ -1,5 +1,15 @@
-.about-pic {
-    max-width: 280px; 
-    margin-left: 50px;
-    border-radius: 5%;
-}
+.custom-margin {
+  margin: 0 auto; /* Center on smaller screens */
+  }
+  
+  @media (min-width: 992px) { /* Large screens and above */
+    .custom-margin {
+      margin-left: 30px;
+    }
+  }
+  
+  .about-pic {
+    max-width: 280px; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 5%; /* Optional: Make the image circular */
+  }
