@@ -213,7 +213,16 @@ body {
 .arch_contact_us_duplicate {
     font-family: Nunito, sans-serif;
     margin: -15px;
+    background-color: #fdfcea;
+    width: 100vw; /* Ensure it stretches to the full viewport width */
+    position: relative; /* Ensure it respects the viewport width */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0;
   }
+  
   
   .arch_contact_us_duplicate .icon-block svg {
     width: 100%;
@@ -261,12 +270,11 @@ body {
   .arch_contact_us_duplicate .responsive-container-block.big-container {
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     padding-top: 0px;
     padding-right: 50px;
     padding-bottom: 0px;
     padding-left: 50px;
-    background-color: #fdfcea;
   }
   
   .arch_contact_us_duplicate .responsive-container-block.container {
@@ -329,7 +337,7 @@ body {
     height: 125px;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 27px;
+    margin-bottom: 10px;
     margin-left: 0px;
     border-top-width: 1px;
     border-right-width: 1px;
@@ -357,7 +365,7 @@ body {
   
   .arch_contact_us_duplicate .button {
     height: 50px;
-    min-width: 240px;
+    width: 100%;
     font-size: 16px;
     color: white;
     border-top-width: 2px;
@@ -379,18 +387,15 @@ body {
     border-image-repeat: initial;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     margin-left: 0px;
     background-color: #b0ab4d;
   }
   
   .arch_contact_us_duplicate .form-wrapper {
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #f3f2cf;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     margin-left: 0px;
   }
   
@@ -450,7 +455,7 @@ body {
     .arch_contact_us_duplicate .responsive-cell-block.wk-mobile-12.wk-desk-5.wk-tab-10.wk-ipadp-5 {
       margin-top: 0px;
       margin-right: 0px;
-      margin-bottom: 80px;
+      margin-bottom: 30px;
       margin-left: 0px;
     }
   }
