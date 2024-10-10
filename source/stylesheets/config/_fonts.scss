@@ -2,15 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Quicksand", "Helvetica", "sans-serif";
+// $body-font: "Work Sans", "Helvetica", "sans-serif";
+//$headers-font: "Quicksand", "Helvetica", "sans-serif";
 
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+// Using a custom font for heading and body
+@font-face {
+    font-family: 'Chubbo-Regular';
+    src: url('/fonts/chubbo/Chubbo-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Supreme';
+    src: url('/fonts/supreme/Supreme.woff') format('woff');
+}
+
+// Declaring font variables
+$chubbo-regular: 'Chubbo-Regular', sans-serif;
+$supreme: 'Supreme', sans-serif;
+
+$body-font: $supreme;
+$headers-font: $chubbo-regular;
