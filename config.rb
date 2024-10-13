@@ -59,4 +59,8 @@ activate :deploy do |deploy|
 end
 
 # Set the HTTP prefix if needed
-set :http_prefix, "/portfolio/source"
+set :http_prefix, ""
+
+# To deploy:
+# bundle exec middleman build
+# bundle exec middleman deploy
