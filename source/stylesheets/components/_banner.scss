@@ -1,20 +1,62 @@
+.banner-bg {
+  background: linear-gradient(to bottom, #D3ABD0, #F4F4F4);
+}
+
+// Ensure the banner-bg css doesn't affect the child elements
+.banner-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #D3ABD0, #F4F4F4);
+  z-index: -1; 
+}
+
 .banner {
   height: 100vh;
 }
 
-/* Importing Google font - Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 30px; /* Position the arrow 20px from the bottom */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg); /* Center horizontally and rotate 45 degrees to point down */
+  border: solid #432361;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  animation: bounce 3s infinite; /* Apply the bounce animation with a longer duration */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0) rotate(45deg); /* Maintain the correct rotation */
+  }
+  40% {
+    transform: translateX(-50%) translateY(-15px) rotate(45deg); /* Move up */
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px) rotate(45deg); /* Move up slightly less */
+  }
+}
 
 
 h1 {
+  background-color: #432361;
+  display: inline-block; 
+  color: white;
   font-size: 2rem;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
-
+  padding: 0.5rem 1rem; 
+  margin-bottom: 1rem; 
+  // font-family: "Inter", sans-serif;
 }
 
 h1 span {
-  color: #BD53ED;
+  // color: #BD53ED;
   position: relative;
 }
 
@@ -25,7 +67,7 @@ h1 span::before {
   position: absolute;
   top: 50%;
   right: -8px;
-  background: #BD53ED;
+  background: white;
   transform: translateY(-45%);
   animation: blink 0.7s infinite;
 }
@@ -36,4 +78,10 @@ h1 span.stop-blinking::before {
 
 @keyframes blink {
   50% { opacity: 0 }
+}
+
+p {
+  margin-top: 18px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
