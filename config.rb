@@ -55,7 +55,7 @@ end
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = "gh-pages" # The branch to deploy to
-  deploy.build_before = true # Build the project before deploying
+  # deploy.build_before = true # Build the project before deploying
 end
 
 # Set the HTTP prefix if needed
