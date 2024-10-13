@@ -1,3 +1,8 @@
+# Development-specific configuration
+configure :development do
+  set :http_prefix, ""
+end
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -9,9 +14,9 @@ end
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -40,7 +45,18 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_host, host: "https://88valleys.github.io/portfolio"
+end
+
+# Deployment configuration
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = "gh-pages" # The branch to deploy to
+  deploy.build_before = true # Build the project before deploying
+end
+
+# Set the HTTP prefix if needed
+set :http_prefix, "/portfolio/source"
