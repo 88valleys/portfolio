@@ -211,11 +211,9 @@ body {
 }
 
 .arch_contact_us_duplicate {
-    // font-family: Nunito, sans-serif;
-    margin: -15px;
-    background: linear-gradient(to bottom, #F4F4F4, #D3ABD0);
-    width: 100vw; /* Ensure it stretches to the full viewport width */
-    position: relative; /* Ensure it respects the viewport width */
+    background: #ffe0d54a;
+    width: 100vw; 
+    position: relative; 
     left: 50%;
     right: 50%;
     margin-left: -50vw;
@@ -279,7 +277,7 @@ body {
   
   .arch_contact_us_duplicate .responsive-container-block.container {
     max-width: 1100px;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   
   .arch_contact_us_duplicate .text-blk.section-head {
@@ -339,6 +337,7 @@ body {
     margin-right: 0px;
     margin-bottom: 10px;
     margin-left: 0px;
+    border-radius: 5px;
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 1px;
@@ -389,8 +388,15 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    background-color: #432361;
+    border-radius: 5px;
+    background-color: #df445675;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
   }
+
+  .arch_contact_us_duplicate .button:hover {
+    background-color: #df4456ea; /* More pink shade on hover */
+}
+  
   
   .arch_contact_us_duplicate .form-wrapper {
     margin-top: 0px;
@@ -406,11 +412,17 @@ body {
   }
   
   .arch_contact_us_duplicate .input-element {
-    background-color: #FCE3E9;
+    background-color: white;
+    border: 2px solid #df445675;
+  }
+
+  .arch_contact_us_duplicate .input-element:focus {
+    outline: none; 
+    border: 2.3px solid #df4456ea;
   }
   
   .arch_contact_us_duplicate .icon-block.social-icon {
-    fill: #b0ab4d;
+    fill: #df4456ea;
   }
   
   @media (max-width: 1024px) {
