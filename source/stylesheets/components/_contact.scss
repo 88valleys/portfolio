@@ -34,6 +34,7 @@ body {
 
 .wk-desk-6 {
   width: 50%;
+  margin-left: 15px;
 }
 
 .wk-desk-7 {
@@ -211,11 +212,10 @@ body {
 }
 
 .arch_contact_us_duplicate {
-    font-family: Nunito, sans-serif;
     margin: -15px;
     background-color: #fdfcea;
-    width: 100vw; /* Ensure it stretches to the full viewport width */
-    position: relative; /* Ensure it respects the viewport width */
+    width: 100vw; 
+    position: relative; 
     left: 50%;
     right: 50%;
     margin-left: -50vw;
