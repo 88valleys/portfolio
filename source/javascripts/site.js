@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
             dynamicText.innerHTML = text.substring(0, i + 1) + '<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>';
             setTimeout(function() {
                 typeWriter(text, i + 1, callback);
-            }, 100);
+            }, 75); // Adjusted typing speed for smoothness
         } else if (typeof callback == 'function') {
-            setTimeout(callback, 700);
+            setTimeout(callback, 1000); // Slight delay before starting the next word
         }
     }
 
