@@ -1,24 +1,7 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-// Define fonts for body and headers
-// $body-font: "Work Sans", "Helvetica", "sans-serif";
-//$headers-font: "Quicksand", "Helvetica", "sans-serif";
+$body-font: "Albert Sans", "sans-serif";
+$headers-font: "Albert Sans", "sans-serif";
 
-// Using a custom font for heading and body
-@font-face {
-    font-family: 'Chubbo-Regular';
-    src: url('/fonts/chubbo/Chubbo-Regular.woff') format('woff');
-}
 
-@font-face {
-    font-family: 'Supreme';
-    src: url('/fonts/supreme/Supreme.woff') format('woff');
-}
-
-// Declaring font variables
-$chubbo-regular: 'Chubbo-Regular', sans-serif;
-$supreme: 'Supreme', sans-serif;
-
-$body-font: $supreme;
-$headers-font: $chubbo-regular;
