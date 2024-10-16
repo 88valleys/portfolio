@@ -7,6 +7,23 @@
   width: 400px;
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .avatar-large {
+    width: 250px;
+
+    margin-top: -48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .avatar-large {
+    width: 200px;
+
+    margin-top: -48px;
+  }
+}
+
 .avatar-bordered {
   width: 40px;
   border-radius: 50%;
