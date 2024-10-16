@@ -1,15 +1,19 @@
 .custom-margin {
-  margin: 0 auto; /* Center on smaller screens */
+  margin: 0 auto; 
   }
   
-  @media (min-width: 992px) { /* Large screens and above */
+  @media (min-width: 992px) { 
     .custom-margin {
       margin-left: 30px;
     }
   }
   
   .about-pic {
-    max-width: 280px; /* Ensure the image is responsive */
+    max-width: 280px; 
     height: auto;
-    border-radius: 5%; /* Optional: Make the image circular */
+    border-radius: 5%; 
+  }
+
+  .about {
+    padding-bottom: 50px;
   }
