@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
-
 *,
 *:before,
 *:after {
@@ -390,11 +388,11 @@ body {
     margin-left: 0px;
     border-radius: 5px;
     background-color: #df445675;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .arch_contact_us_duplicate .button:hover {
-    background-color: #df4456ea; /* More pink shade on hover */
+    background-color: #df4456ea; 
 }
   
   
