@@ -49,10 +49,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_host, host: "https://88valleys.github.io/portfolio"
-
-  # Use relative URLs
-  activate :relative_assets
-  set :relative_links, true
 end
 
 # Deployment configuration
