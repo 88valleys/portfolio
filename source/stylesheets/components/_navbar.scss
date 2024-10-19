@@ -1,12 +1,120 @@
-.navbar-lewagon {
+.navbar {
+  width: 100%;
+  background-color: #ffffffe0;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  padding: 1rem;
+  z-index: 1000;
+  position: fixed;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; 
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-section-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    color: #df4456ea;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: font-weight 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
+
+  }
+
+  a:hover {
+    font-weight: 700;
+  }
+}
+
+.navbar-social-links {
+  margin-left: auto;
+  margin-top: 15px;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+
+  li {
+    margin-left: 15px;
+  }
+
+  a {
+    color: #df4456ea;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: opacity 0.3s ease; 
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+}
+
+/* Hamburger menu for mobile */
+.navbar-hamburger {
+  display: none;
+}
+
+.hamburger-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 999;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px 0;
+}
+
+.mobile-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-section-links,
+  .navbar-social-links {
+    display: none;
+  }
+
+  .navbar-hamburger {
+    display: block;
+    margin-left: auto; 
+    color: black;
+  }
 }
