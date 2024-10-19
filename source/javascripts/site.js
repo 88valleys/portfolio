@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     startTextAnimation(0);
 });
 
+// Navbar: Hamburger toggleMenu 
 function toggleMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
     mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
