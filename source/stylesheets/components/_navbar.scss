@@ -20,6 +20,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  padding-left: 0;
   margin: 0 auto;
   position: absolute;
   left: 50%;
@@ -38,8 +39,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 1rem;
-    transition: font-weight 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
-
+    transition: font-weight 0.3s ease, opacity 0.3s ease; 
   }
 
   a:hover {
@@ -55,13 +55,13 @@
   display: flex;
 
   li {
-    margin-left: 15px;
+    margin: 10px;
   }
 
   a {
     color: #df4456ea;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: opacity 0.3s ease; 
     }
 
@@ -81,19 +81,28 @@
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
-  background-color: #333;
-  padding: 10px;
+  background-color: #ea818d;
+  padding: 20px;
   position: absolute;
   top: 60px;
   right: 10px;
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile-menu ul {
   list-style-type: none;
-  padding: 0;
+  margin-bottom: -2px;
+  padding-left: 0;
 }
 
 .mobile-menu li {
@@ -101,20 +110,30 @@
 }
 
 .mobile-menu a {
-  color: black;
+  color: white;
   text-decoration: none;
+  font-weight: 400;
 }
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .navbar-section-links,
-  .navbar-social-links {
+  .navbar-section-links {
     display: none;
+  }
+
+  /* Social links are centred in navbar in a row */
+  .navbar-social-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    width: 100%;
+    margin: 0;
   }
 
   .navbar-hamburger {
     display: block;
     margin-left: auto; 
-    color: black;
+    color: #df4456ea;
   }
 }
