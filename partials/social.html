@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="../stylesheets/site.css" rel="stylesheet" />
     <script src="../javascripts/site.js"></script>
   </head>
@@ -51,12 +55,14 @@
         </div>
         <div class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9" id="i6df">
           <div class="form-wrapper">
-            <input class="input input-element" name="name" placeholder="name">
-            <input class="input input-element" name="email" placeholder="email">
-            <textarea class="textinput input-element" placeholder="write your message"></textarea>
-            <button class="button">
-              Send Message
-            </button>
+            <form id="contact-form">
+              <input class="input input-element" name="name" placeholder="name" required>
+              <input class="input input-element" name="email" placeholder="email" type="email" required>
+              <textarea class="textinput input-element" name="message" placeholder="write your message" required></textarea>
+              <button class="button" type="submit">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
