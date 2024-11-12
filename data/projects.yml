@@ -12,6 +12,14 @@
   github: https://github.com/88valleys/USpeak4Me
   online: true
 
+- name: Soundmap Tokyo
+  description: Built using React, SoundMap Tokyo is a web application that catalogs live music venues across Tokyo, organising them by the genres they feature, available equipment, nearest station, and venue website.
+  image: projects/soundmap.png
+  url: https://88valleys.github.io/soundmap-tokyo/
+  github: https://github.com/88valleys/soundmap-tokyo
+  online: true
+
+
 # - name: Airbnb
 #   description: Decent description of the app
 #   image: projects/placeholder.png
