@@ -1,47 +1,71 @@
 // Ensure the banner-bg css doesn't affect the child elements
 .banner-bg::before {
-  content: "";
-  
+  content: '';
+
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: #ffffff;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .banner {
   height: 100vh;
 }
-
-.banner::after {
-  content: "";
+.scroll-icon {
+  content: '';
   position: absolute;
-  bottom: 30px; 
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   border: solid #df4456ea;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 10px;
-  animation: bounce 3s infinite; 
+  animation: bounce 3s infinite;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.scroll-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); // Transparent background to increase clickable area
+  border-radius: 50%; // Optional: make the clickable area circular
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(-50%) translateY(0) rotate(45deg); 
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0) rotate(45deg);
   }
   40% {
-    transform: translateX(-50%) translateY(-15px) rotate(45deg); 
+    transform: translateX(-50%) translateY(-15px) rotate(45deg);
   }
   60% {
-    transform: translateX(-50%) translateY(-10px) rotate(45deg); 
+    transform: translateX(-50%) translateY(-10px) rotate(45deg);
   }
 }
 
-
-h1, h2.subheading, p.banner-text {
+h1,
+h2.subheading,
+p.banner-text {
   position: relative;
   color: #df4456ea;
   font-size: 2.5rem;
@@ -51,31 +75,32 @@ h1, h2.subheading, p.banner-text {
   z-index: 1;
 
   @media (max-width: 768px) {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 }
 
 h2.subheading {
   font-size: 2rem;
-  display: inline-block; 
+  display: inline-block;
   margin-bottom: 3px;
 }
 
 p.banner-text {
-  font-size: 1.5rem; 
-  display: block; 
+  font-size: 1.5rem;
+  display: block;
   margin-top: 0;
 }
 
-h1::after, h2.subheading::after {
+h1::after,
+h2.subheading::after {
   content: '';
   position: absolute;
-  top: 73%; 
+  top: 73%;
   left: 0;
   width: 100%;
-  height: 20px; 
+  height: 20px;
   background-color: #fdd2c1;
-  opacity: 0.6; 
+  opacity: 0.6;
   filter: blur(3.5px);
   z-index: -1;
 }
@@ -94,15 +119,15 @@ p span {
 
 // Blinking text cursor
 h1 span::before {
-  content: "";
-  height: 50px; 
+  content: '';
+  height: 50px;
   width: 2px;
   position: absolute;
   top: 50%;
   right: -8px;
   background: currentColor;
   transform: translateY(-45%);
-  animation: blink 1.1s infinite ease-in-out; 
+  animation: blink 1.1s infinite ease-in-out;
 }
 
 h1 span.stop-blinking::before {
@@ -110,30 +135,31 @@ h1 span.stop-blinking::before {
 }
 
 @keyframes blink {
-  50% { opacity: 0 }
+  50% {
+    opacity: 0;
+  }
 }
 
 p {
   margin-top: 18px;
   margin-bottom: 1rem;
   font-size: 1.1rem;
-  
+
   @media (max-width: 768px) {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
 
-
 .text-content {
-  text-align: left; 
+  text-align: left;
 
   @media (max-width: 768px) {
-    text-align: center; 
+    text-align: center;
   }
 }
 
 .media-icon-container {
-  justify-content: left; 
+  justify-content: left;
 }
 
 @media (max-width: 768px) {
