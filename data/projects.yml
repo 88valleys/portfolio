@@ -19,7 +19,12 @@
   github: https://github.com/88valleys/soundmap-tokyo
   online: true
 
-
+- name: WealthWise
+  description: Developed during my time at Japan Product Camp 2024, WealthWise is a fintech product concept that gamifies financial learning for young professionals in Japan. As part of a team, I contributed to the UI design, collaborating in Figma, conducting user research, and developing WealthWise's product strategy.
+  image: projects/wealthwise.png
+  github: https://www.figma.com/proto/gBst8ala7g5z7Y1Dzzpawm/Weathwise-Ed?page-id=0%3A1&node-id=54-3222&t=Hx7LySmxOPGUFwLX-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=54%3A3222
+  url: https://drive.google.com/file/d/1vaxgdzVGTfiPEMwBwX_nZF4JXlRhP8Cu/view?usp=sharing
+  online: true
 # - name: Airbnb
 #   description: Decent description of the app
 #   image: projects/placeholder.png
