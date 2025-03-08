@@ -46,14 +46,14 @@ You can copy and paste these meta tags inside your `<head></head>` and update th
 ```
 <title><%= current_page.data.title || "NAME OF MY SITE | MY TITLE" %></title>
 <meta name="description" content="Description of my portfolio site">
-<!-- Facebook Open Graph data 
+<!-- Facebook Open Graph data
 <meta property="og:title" content="NAME OF MY SITE | MY TITLE" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="THE_URL_OF_MY_PORTFOLIO" />
 <meta property="og:image" content="<%= image_path 'MY_OG_IMAGE_WITH_RIGHT_SIZE.png' %>" />
 <meta property="og:description" content="Description of my portfolio site" />
 <meta property="og:site_name" content="NAME OF MY SITE | MY TITLE" />
-<!-- Twitter Card data 
+<!-- Twitter Card data
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@twitter_handle">
 <meta name="twitter:title" content="NAME OF MY SITE | MY TITLE">
@@ -69,3 +69,7 @@ You can copy and paste these meta tags inside your `<head></head>` and update th
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request -->
+
+To deploy:
+bundle exec middleman build
+bundle exec middleman deploy
