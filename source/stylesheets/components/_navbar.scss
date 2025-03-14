@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px; 
+  height: 40px;
 }
 
 .navbar-section-links {
@@ -39,7 +39,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 1rem;
-    transition: font-weight 0.3s ease, opacity 0.3s ease; 
+    transition: font-weight 0.3s ease, opacity 0.3s ease;
   }
 
   a:hover {
@@ -62,12 +62,12 @@
     color: #df4456ea;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: opacity 0.3s ease; 
-    }
+    transition: opacity 0.3s ease;
+  }
 
-    a:hover {
-      opacity: 0.7;
-    }
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 /* Hamburger menu for mobile */
@@ -116,6 +116,14 @@
   font-weight: 400;
 }
 
+.navbar-social-links .social-icon {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.navbar-social-links .social-icon:hover {
+  transform: scale(1.4);
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -127,14 +135,14 @@
   .navbar-social-links {
     display: flex;
     justify-content: center;
-    flex-direction: row; 
+    flex-direction: row;
     width: 100%;
     margin: 0;
   }
 
   .navbar-hamburger {
     display: block;
-    margin-left: auto; 
+    margin-left: auto;
     color: #df4456ea;
   }
 }
