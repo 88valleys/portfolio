@@ -136,6 +136,15 @@
   font-weight: 400;
 }
 
+.navbar-social-links .social-icon {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.navbar-social-links .social-icon:hover {
+  transform: scale(1.4);
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .navbar-section-links {
