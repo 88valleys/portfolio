@@ -3,7 +3,7 @@
     <div class="col-12">
       <div class="container">
         <div id="projects">
-          <h2 class="subheading">Projects 👩🏻‍💻</h2>
+          <h2 class="subheading" id="projects-title">Projects 👩🏻‍💻</h2>
           <div class="cards">
             <% data.projects.each do |project| %>
               <div class="card-product">
@@ -22,7 +22,8 @@
                       <% end %>
                     </div>
                   </div>
-                  <p><%= project.description %></p>
+                  <p class="project-description" data-description-en="<%= project['description'] %>" 
+data-description-jp="<%= project['description_jp'] %>"><%= project.description %></p>
                 </div>
               </div>
             <% end %>
