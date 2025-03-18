@@ -1,5 +1,6 @@
 - name: TokyoScene
   description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.
+  description_jp: 東京シーンは、Ruby on Railsを使用したウェブベースのイベント集約アプリで、Spotifyデータを活用して、ユーザーのお気に入りのアーティストやジャンルに基づいて東京でのライブ音楽イベントをおすすめします。
   image: projects/TokyoSceneMockup.png
   url: https://www.tokyoscene.me
   github: https://github.com/88valleys/TokyoScene
@@ -7,6 +8,7 @@
 
 - name: USpeak4Me
   description: USpeak4Me is a marketplace app using Ruby on Rails, designed to connect foreign residents in Japan with professional interpreters.
+  description_jp: USpeak4Meは、Ruby on Railsを使用して開発されたマーケットプレイスアプリで、日本に住む外国人とプロの通訳者をつなぐことを目的としています。
   image: projects/USpeak4MeMockup.png
   url: https://uspeak4me-c92c1d2ed740.herokuapp.com/
   github: https://github.com/88valleys/USpeak4Me
@@ -14,6 +16,7 @@
 
 - name: Soundmap Tokyo
   description: Built using React, SoundMap Tokyo is a web application that catalogs live music venues across Tokyo, organising them by the genres they feature, available equipment, nearest station, and venue website.
+  description_jp: Reactを使用して構築されたSoundMap Tokyoは、東京中のライブ音楽会場をカタログ化し、ジャンル、利用可能な設備、最寄り駅、会場のウェブサイトで整理するウェブアプリケーションです。
   image: projects/soundmap.png
   url: https://88valleys.github.io/soundmap-tokyo/
   github: https://github.com/88valleys/soundmap-tokyo
@@ -21,6 +24,7 @@
 
 - name: WealthWise
   description: Developed during my time at Japan Product Camp 2024, WealthWise is a fintech product concept that gamifies financial learning for young professionals in Japan. As part of a team, I contributed to the UI design, collaborating in Figma, conducting user research, and developing WealthWise's product strategy.
+  description_jp: 2024年のJapan Product Campで開発されたWealthWiseは、日本の若手プロフェッショナル向けに金融学習をゲーミフィケーションするフィンテック製品のコンセプトです。チームの一員として、FigmaでのUIデザイン、ユーザーリサーチの実施、WealthWiseの製品戦略の開発に貢献しました。
   image: projects/wealthwise.png
   github: https://www.figma.com/proto/gBst8ala7g5z7Y1Dzzpawm/Weathwise-Ed?page-id=0%3A1&node-id=54-3222&t=Hx7LySmxOPGUFwLX-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=54%3A3222
   url: https://drive.google.com/file/d/1vaxgdzVGTfiPEMwBwX_nZF4JXlRhP8Cu/view?usp=sharing
