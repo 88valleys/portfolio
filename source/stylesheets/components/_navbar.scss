@@ -180,3 +180,34 @@
   right: 20px;
   color: white;
 }
+
+.language-switcher {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #df4456ea;
+  white-space: nowrap;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #df4456ea;
+}
+
+.language-link {
+  text-decoration: none;
+  transition: font-size 0.3s ease, color 0.3s ease;
+  color: #df4456ea;
+
+  &:hover {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #df4456ea;
+  }
+  &.selected {
+    font-weight: bold;
+    font-size: 16px;
+    color: #df4456;
+  }
+}
