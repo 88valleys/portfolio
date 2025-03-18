@@ -4,11 +4,14 @@
       <div class="container">
         <div id="about" class="d-flex flex-column flex-lg-row align-items-start" style="padding-bottom: 35px;">
           <div class="flex-grow-1" style="line-height: 1.8;">
-            <h2 class="subheading">About me 🌻</h2>
-            <p>Hello, thank you for dropping by! I’m <span>Senie</span> – Melbourne-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.</p>
-            <p>Currently, I'm a <span>front-end developer</span> intern at <a href="https://sustainabilitypage.com/" target="_blank" style="color: #df4456ea; text-decoration: none; transition: color 0.3s ease, text-decoration 0.3s ease, font-weight 0.3s ease;" onmouseover="this.style.color='#ea818d'; this.style.textDecoration='underline'; this.style.fontWeight='bold';" onmouseout="this.style.color='#df4456ea'; this.style.textDecoration='none'; this.style.fontWeight='normal';"><span>Sustainability Page</span></a>, where I develop and maintain their web application with React, Next.js, and TypeScript. Alongside my internship, I take on freelance projects, designing and developing custom websites for clients.</p>
-            <p>With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.</p>
-            <p>Outside of work, I play bass, explore Tokyo’s live music scene, enjoy video games, reading and practice yoga. I’m always <span>open to new projects</span>, so feel free to reach out! 🚀</p>
+            <h2 class="subheading" id="about-title">About me 🌻</h2>
+            <p id="about-paragraph-1">Hello, thank you for dropping by! I’m <span>Senie</span> – Melbourne, Australia-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.</p>
+            <p id="about-paragraph-2">
+              Currently, I'm a <span class="highlight">front-end developer</span> intern at 
+              <a href="https://sustainabilitypage.com/" target="_blank" class="highlight-link"><span>Sustainability Page</span></a>, where I develop and maintain their web application with React, Next.js, and TypeScript. Alongside my internship, I take on freelance projects, designing and developing custom websites for clients.
+            </p>
+            <p id="about-paragraph-3">With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.</p>
+            <p id="about-paragraph-4">Outside of work, I play bass, explore Tokyo’s live music scene, enjoy video games, reading and practice yoga. I’m always <span>open to new projects</span>, so feel free to reach out! 🚀</p>
           </div>
           <div class="d-flex justify-content-center justify-content-lg-start ml-lg-3 mt-3 mt-lg-0 custom-margin">
             <%= image_tag 'Senie-dp.jpg', alt: "profile photo", class: 'about-pic' %>
@@ -16,7 +19,7 @@
         </div>
         <br>
         <br>
-        <h2 class="subheading">Tech Stack 💻</h2>
+        <h2 class="subheading" id="tech-stack-title">Tech Stack 💻</h2>
         <br>
         <div class="tech-stack">
           <div class="tech-item">

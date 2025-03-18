@@ -1,10 +1,15 @@
 <nav class="navbar">
   <div class="navbar-container">
+    <!-- Translation to EN / JP -->
+    <div class="language-switcher">
+      <a id="lang-en" href="#" class="language-link">EN</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+      <a id="lang-jp" href="#" class="language-link">JP</a>
+    </div>
     <!-- Section Links (Center in Desktop) -->
     <ul class="navbar-section-links">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a id="navbar_projects" href="#projects">Projects</a></li>
+      <li><a id="navbar_about" href="#about">About</a></li>
+      <li><a id="navbar_contact" href="#contact">Contact</a></li>
     </ul>
     <!-- Social Links (Center in Mobile) -->
     <ul class="navbar-social-links">
@@ -24,15 +29,15 @@
         </a>
       </li>
     </ul>
-    <!-- Hamburger Menu (Mobile Only) -->
+    <!-- Hamburger Menu (mobile only) -->
     <div class="navbar-hamburger">
       <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
       <div id="mobile-menu" class="mobile-menu">
         <span class="close-icon">&times;</span>
         <ul class="sections">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a id="mobile_menu_projects" href="#projects">Projects</a></li>
+          <li><a id="mobile_menu_about" href="#about">About</a></li>
+          <li><a id="mobile_menu_contact" href="#contact">Contact</a></li>
         </ul>
         <hr class="menu-divider">
         <ul class="navbar-social-links">
@@ -52,6 +57,7 @@
             </a>
           </li>
         </ul>
+        <p class="mobile-credit" id="mobile-credit">Built with ❤︎ by Senie using <a href="https://middlemanapp.com/" target="_blank">Middleman</a>.</p>
       </div>
     </div>
   </div>

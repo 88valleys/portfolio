@@ -1,19 +1,31 @@
 .custom-margin {
-  margin: 0 auto; 
-  }
-  
-  @media (min-width: 992px) { 
-    .custom-margin {
-      margin-left: 30px;
-    }
-  }
-  
-  .about-pic {
-    max-width: 280px; 
-    height: auto;
-    border-radius: 5%; 
-  }
+  margin: 0 auto;
+}
 
-  .about {
-    padding-bottom: 50px;
+@media (min-width: 992px) {
+  .custom-margin {
+    margin-left: 30px;
   }
+}
+
+.about-pic {
+  max-width: 280px;
+  height: auto;
+  border-radius: 5%;
+}
+
+.about {
+  padding-bottom: 50px;
+}
+
+.highlight-link {
+  color: #df4456ea;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease, font-weight 0.3s ease;
+
+  &:hover {
+    color: #ea818d;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
