@@ -30,11 +30,16 @@
     <!-- Navbar Section -->
 <nav class="navbar">
   <div class="navbar-container">
+    <!-- Translation to EN / JP -->
+    <div class="language-switcher">
+      <a id="lang-en" href="#" class="language-link">EN</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+      <a id="lang-jp" href="#" class="language-link">JP</a>
+    </div>
     <!-- Section Links (Center in Desktop) -->
     <ul class="navbar-section-links">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a id="navbar_projects" href="#projects">Projects</a></li>
+      <li><a id="navbar_about" href="#about">About</a></li>
+      <li><a id="navbar_contact" href="#contact">Contact</a></li>
     </ul>
     <!-- Social Links (Center in Mobile) -->
     <ul class="navbar-social-links">
@@ -54,15 +59,15 @@
         </a>
       </li>
     </ul>
-    <!-- Hamburger Menu (Mobile Only) -->
+    <!-- Hamburger Menu (mobile only) -->
     <div class="navbar-hamburger">
       <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
       <div id="mobile-menu" class="mobile-menu">
         <span class="close-icon">&times;</span>
         <ul class="sections">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a id="mobile_menu_projects" href="#projects">Projects</a></li>
+          <li><a id="mobile_menu_about" href="#about">About</a></li>
+          <li><a id="mobile_menu_contact" href="#contact">Contact</a></li>
         </ul>
         <hr class="menu-divider">
         <ul class="navbar-social-links">
@@ -82,6 +87,7 @@
             </a>
           </li>
         </ul>
+        <p class="mobile-credit" id="mobile-credit">Built with ❤︎ by Senie using <a href="https://middlemanapp.com/" target="_blank">Middleman</a>.</p>
       </div>
     </div>
   </div>
@@ -94,10 +100,10 @@
     <div class="col-12 d-flex flex-column justify-content-center align-items-center h-100">
       <div class="d-flex flex-column flex-md-row align-items-center">
         <div class="text-content mr-lg-3">
-          <h1 class="title-main"><span></span></h1>
+          <h1 class="title-main"><span id="banner-title"></span></h1>
           <br>
-          <p>A junior <span>full-stack web developer</span> based in Tokyo, Japan. With a background in digital design and media, I specialise in <span>designing</span> and <span>coding</span> visually appealing and immersive user experiences. ✨</p>
-          <a href="files/SenieCalalang_CV.pdf" class="btn btn-outline-primary btn-lg" download="SenieCalalang_CV.pdf" style="margin-bottom: -17px;">Download CV</a>
+          <p id="banner-description">A junior <span>full-stack web developer</span> based in Tokyo, Japan. With a background in digital design and media, I specialise in <span>designing</span> and <span>coding</span> visually appealing and immersive user experiences. ✨</p>
+          <a href="files/SenieCalalang_CV.pdf" id="download_cv" class="btn btn-outline-primary btn-lg" download="SenieCalalang_CV.pdf" style="margin-bottom: -17px;">Download CV</a>
         </div>
         <br>
         <div class="d-flex justify-content-center justify-content-lg-end">
@@ -114,7 +120,7 @@
     <div class="col-12">
       <div class="container">
         <div id="projects">
-          <h2 class="subheading">Projects 👩🏻‍💻</h2>
+          <h2 class="subheading" id="projects-title">Projects 👩🏻‍💻</h2>
           <div class="cards">
               <div class="card-product">
                 <img src="images/projects/TokyoSceneMockup.png" alt="project image" />
@@ -126,7 +132,8 @@
 </a><a href="https://www.tokyoscene.me" class="external-link" target="_blank">                          <i class="fas fa-external-link-alt"></i>
 </a>                    </div>
                   </div>
-                  <p>A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.</p>
+                  <p class="project-description" data-description-en="A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres." 
+data-description-jp="TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。">A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.</p>
                 </div>
               </div>
               <div class="card-product">
@@ -139,7 +146,8 @@
 </a><a href="https://uspeak4me-c92c1d2ed740.herokuapp.com/" class="external-link" target="_blank">                          <i class="fas fa-external-link-alt"></i>
 </a>                    </div>
                   </div>
-                  <p>USpeak4Me is a marketplace app using Ruby on Rails, designed to connect foreign residents in Japan with professional interpreters.</p>
+                  <p class="project-description" data-description-en="USpeak4Me is a marketplace app using Ruby on Rails, designed to connect foreign residents in Japan with professional interpreters." 
+data-description-jp="USpeak4Meは、Ruby on Railsで開発されたマーケットプレイスアプリです。日本に住む外国人とプロの通訳者をつなぐことを目的としています。">USpeak4Me is a marketplace app using Ruby on Rails, designed to connect foreign residents in Japan with professional interpreters.</p>
                 </div>
               </div>
               <div class="card-product">
@@ -152,7 +160,8 @@
 </a><a href="https://88valleys.github.io/soundmap-tokyo/" class="external-link" target="_blank">                          <i class="fas fa-external-link-alt"></i>
 </a>                    </div>
                   </div>
-                  <p>Built using React, SoundMap Tokyo is a web application that catalogs live music venues across Tokyo, organising them by the genres they feature, available equipment, nearest station, and venue website.</p>
+                  <p class="project-description" data-description-en="Built using React, SoundMap Tokyo is a web application that catalogs live music venues across Tokyo, organising them by the genres they feature, available equipment, nearest station, and venue website." 
+data-description-jp="Reactで構築されたSoundMap Tokyoは、東京のライブ音楽会場をカタログ化し、ジャンル、設備、最寄り駅、公式サイトなどで整理するウェブアプリケーションです。">Built using React, SoundMap Tokyo is a web application that catalogs live music venues across Tokyo, organising them by the genres they feature, available equipment, nearest station, and venue website.</p>
                 </div>
               </div>
               <div class="card-product">
@@ -165,7 +174,8 @@
 </a><a href="https://drive.google.com/file/d/1vaxgdzVGTfiPEMwBwX_nZF4JXlRhP8Cu/view?usp=sharing" class="external-link" target="_blank">                          <i class="fas fa-external-link-alt"></i>
 </a>                    </div>
                   </div>
-                  <p>Developed during my time at Japan Product Camp 2024, WealthWise is a fintech product concept that gamifies financial learning for young professionals in Japan. As part of a team, I contributed to the UI design, collaborating in Figma, conducting user research, and developing WealthWise's product strategy.</p>
+                  <p class="project-description" data-description-en="Developed during my time at Japan Product Camp 2024, WealthWise is a fintech product concept that gamifies financial learning for young professionals in Japan. As part of a team, I contributed to the UI design, collaborating in Figma, conducting user research, and developing WealthWise's product strategy." 
+data-description-jp="WealthWiseは、2024年のJapan Product Campで開発された、若手プロフェッショナル向けのゲーミフィケーション型金融学習フィンテック製品のコンセプトです。チームの一員として、FigmaでのUIデザイン、ユーザーリサーチ、製品戦略の開発に貢献しました。">Developed during my time at Japan Product Camp 2024, WealthWise is a fintech product concept that gamifies financial learning for young professionals in Japan. As part of a team, I contributed to the UI design, collaborating in Figma, conducting user research, and developing WealthWise's product strategy.</p>
                 </div>
               </div>
           </div>
@@ -181,11 +191,14 @@
       <div class="container">
         <div id="about" class="d-flex flex-column flex-lg-row align-items-start" style="padding-bottom: 35px;">
           <div class="flex-grow-1" style="line-height: 1.8;">
-            <h2 class="subheading">About me 🌻</h2>
-            <p>Hello, thank you for dropping by! I’m <span>Senie</span> – Melbourne-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.</p>
-            <p>Currently, I'm a <span>front-end developer</span> intern at <a href="https://sustainabilitypage.com/" target="_blank" style="color: #df4456ea; text-decoration: none; transition: color 0.3s ease, text-decoration 0.3s ease, font-weight 0.3s ease;" onmouseover="this.style.color='#ea818d'; this.style.textDecoration='underline'; this.style.fontWeight='bold';" onmouseout="this.style.color='#df4456ea'; this.style.textDecoration='none'; this.style.fontWeight='normal';"><span>Sustainability Page</span></a>, where I develop and maintain their web application with React, Next.js, and TypeScript. Alongside my internship, I take on freelance projects, designing and developing custom websites for clients.</p>
-            <p>With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.</p>
-            <p>Outside of work, I play bass, explore Tokyo’s live music scene, enjoy video games, reading and practice yoga. I’m always <span>open to new projects</span>, so feel free to reach out! 🚀</p>
+            <h2 class="subheading" id="about-title">About me 🌻</h2>
+            <p id="about-paragraph-1">Hello, thank you for dropping by! I’m <span>Senie</span> – Melbourne, Australia-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.</p>
+            <p id="about-paragraph-2">
+              Currently, I'm a <span class="highlight">front-end developer</span> intern at 
+              <a href="https://sustainabilitypage.com/" target="_blank" class="highlight-link"><span>Sustainability Page</span></a>, where I develop and maintain their web application with React, Next.js, and TypeScript. Alongside my internship, I take on freelance projects, designing and developing custom websites for clients.
+            </p>
+            <p id="about-paragraph-3">With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.</p>
+            <p id="about-paragraph-4">Outside of work, I play bass, explore Tokyo’s live music scene, enjoy video games, reading and practice yoga. I’m always <span>open to new projects</span>, so feel free to reach out! 🚀</p>
           </div>
           <div class="d-flex justify-content-center justify-content-lg-start ml-lg-3 mt-3 mt-lg-0 custom-margin">
             <img src="images/Senie-dp.jpg" alt="profile photo" class="about-pic" />
@@ -193,7 +206,7 @@
         </div>
         <br>
         <br>
-        <h2 class="subheading">Tech Stack 💻</h2>
+        <h2 class="subheading" id="tech-stack-title">Tech Stack 💻</h2>
         <br>
         <div class="tech-stack">
           <div class="tech-item">
@@ -613,11 +626,11 @@
     <div class="responsive-container-block big-container">
       <div class="responsive-container-block container">
         <div class="responsive-cell-block wk-mobile-12 wk-desk-6 wk-tab-10 wk-ipadp-5" id="ih6s">
-          <h2 class="subheading">
+          <h2 id="social-title" class="subheading">
             Let's connect! 💫
           </h2>
-          <p style="line-height: 1.6;">
-            I’d love to hear from you! Whether you’re interested in collaborating, discussing ideas, or want to chat over a coffee, feel free to reach out. You can connect with me on social media or drop me a message!
+          <p id="social-paragraph" style="line-height: 1.6;">
+            I’d love to hear from you! Whether you’re interested in collaborating, discussing ideas, or want to chat over a coffee, feel free to reach out. You can connect with me on social media or send me a message!
           </p>
           <div class="social-media-icon-container">
             <div class="row my-4">
@@ -645,10 +658,10 @@
         <div class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9" id="i6df">
           <div class="form-wrapper">
             <form id="contact-form">
-              <input class="input input-element" name="name" placeholder="name" required>
-              <input class="input input-element" name="email" placeholder="email" type="email" required>
-              <textarea class="textinput input-element" name="message" placeholder="write your message" required></textarea>
-              <button class="button" type="submit">
+              <input class="input input-element" id="contact-name" name="name" placeholder="name" required>
+              <input class="input input-element" name="email" id="contact-email" placeholder="email" type="email" required>
+              <textarea class="textinput input-element" id="contact-message" name="message" placeholder="write your message" required></textarea>
+              <button class="button" id="contact-button" type="submit">
                 Send Message
               </button>
             </form>
@@ -660,7 +673,7 @@
 </section>
   <!-- Footer Section -->
   <footer class="footer">
-  <p>Built with ❤︎ by Senie using <a href="https://middlemanapp.com/" target="_blank">Middleman</a>.</p>
+  <p class="footer-title" id="footer-title">Built with ❤︎ by Senie using <a href="https://middlemanapp.com/" target="_blank">Middleman</a>.</p>
 </footer>
 </div>
 
