@@ -29,10 +29,12 @@ function initTranslation() {
       about_paragraph_1:
         'Hello, thank you for dropping by! I’m <span>Senie</span> – Melbourne, Australia-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.',
       about_paragraph_2:
-        "Currently, I'm a <span class='highlight'>front-end developer</span> intern at <a href='https://sustainabilitypage.com/' target='_blank' class='highlight-link'><span>Sustainability Page</span></a>, where I develop and maintain their web application with React, Next.js, and TypeScript. Alongside my internship, I take on freelance projects, designing and developing custom websites for clients.",
+        "In February 2025, I completed <span class='highlight'>Japan Product Camp</span>, an intensive program on <span>product design, user research, and growth strategies</span>. I learned about product design with the <span>user in mind</span>, conducting user interviews, data analysis, and usability testing to inform product decisions.",
       about_paragraph_3:
-        "With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.",
+        "Currently, I'm a <span class='highlight'>front-end developer</span> intern at <a href='https://sustainabilitypage.com/' target='_blank' class='highlight-link'><span>Sustainability Page</span></a>, where I develop and maintain their web application with React, Next.js, and TypeScript. Alongside my internship, I take on freelance projects, designing and developing custom websites for clients.",
       about_paragraph_4:
+        "With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.",
+      about_paragraph_5:
         'Outside of work, I play bass, explore Tokyo’s live music scene, enjoy video games, reading and practice yoga. I’m always <span>open to new projects</span>, so feel free to reach out! 🚀',
       tech_stack_title: 'Tech Stack 💻',
 
@@ -63,10 +65,12 @@ function initTranslation() {
       about_paragraph_1:
         'こんにちは、ご訪問ありがとうございます！<span>セニー</span>です。メルボルン（オーストラリア）出身、東京在住の<span>フルスタックウェブ開発者</span>です。レスポンシブでユーザーフレンドリーなウェブアプリケーションの開発に情熱を持っています。',
       about_paragraph_2:
-        "現在、私は<span class='highlight'>フロントエンド開発者</span>として<a href='https://sustainabilitypage.com/' target='_blank' class='highlight-link'><span>Sustainability Page</span></a>でインターンをしています。React、Next.js、TypeScriptを活用し、ウェブアプリケーションの開発・運用に携わっています。インターンシップと並行して、フリーランスのプロジェクトに取り組み、クライアントのためにカスタムウェブサイトを設計および開発しています。",
+        "2025年2月、<span class='highlight'>Japan Product Camp</span>を修了しました。この集中プログラムでは、<span>プロダクトデザイン、ユーザーリサーチ、グロース戦略</span>について学びました。<span>ユーザー視点</span>でのプロダクトデザインを学び、ユーザーインタビュー、データ分析、ユーザビリティテストを実施し、プロダクトの意思決定に役立てました。",
       about_paragraph_3:
-        '<span>デジタルメディア＆デザイン</span>のバックグラウンドを活かし、クリーンで使いやすいインターフェースを設計することに情熱を持っています。デザインとテクノロジーを融合させた魅力的なプロダクトを創るために、クリエイティブなチームと協力することを楽しみにしています。',
+        "現在、私は<span class='highlight'>フロントエンド開発者</span>として<a href='https://sustainabilitypage.com/' target='_blank' class='highlight-link'><span>Sustainability Page</span></a>でインターンをしています。React、Next.js、TypeScriptを活用し、ウェブアプリケーションの開発・運用に携わっています。インターンシップと並行して、フリーランスのプロジェクトに取り組み、クライアントのためにカスタムウェブサイトを設計および開発しています。",
       about_paragraph_4:
+        '<span>デジタルメディア＆デザイン</span>のバックグラウンドを活かし、クリーンで使いやすいインターフェースを設計することに情熱を持っています。デザインとテクノロジーを融合させた魅力的なプロダクトを創るために、クリエイティブなチームと協力することを楽しみにしています。',
+      about_paragraph_5:
         '仕事の外では、ベースを弾いたり、東京のライブミュージックシーンを探索したり、ビデオゲームを楽しんだり、読書やヨガを練習したりしています。常に<span>新しいプロジェクトにオープン</span>なので、お気軽にご連絡ください！🚀',
       tech_stack_title: '技術スタック 💻',
       social_title: 'つながりましょう！💫',
@@ -100,6 +104,8 @@ function initTranslation() {
     about_paragraph_2: document.getElementById('about-paragraph-2'),
     about_paragraph_3: document.getElementById('about-paragraph-3'),
     about_paragraph_4: document.getElementById('about-paragraph-4'),
+    about_paragraph_5: document.getElementById('about-paragraph-5'),
+
     tech_stack_title: document.getElementById('tech-stack-title'),
 
     social_title: document.getElementById('social-title'),
@@ -150,6 +156,8 @@ function initTranslation() {
       translations[language].about_paragraph_3;
     elements.about_paragraph_4.innerHTML =
       translations[language].about_paragraph_4;
+    elements.about_paragraph_5.innerHTML =
+      translations[language].about_paragraph_5;
     elements.tech_stack_title.innerHTML =
       translations[language].tech_stack_title;
 
