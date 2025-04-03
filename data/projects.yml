@@ -1,7 +1,8 @@
 - name: TokyoScene
-  description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.
-  description_jp: TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。
+  description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres. Click on the above picture to watch an app demo, which I led the presentation for during Le Wagon's demo day with my group.
+  description_jp: TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。Le Wagonのデモデイで、私がグループと共にプレゼンテーションをリードしました。上の画像をクリックするとアプリのデモをご覧いただけます。
   image: projects/TokyoSceneMockup.png
+  video: https://www.youtube.com/watch?v=D2I2us_6M2c&t=1493s
   url: https://www.tokyoscene.me
   github: https://github.com/88valleys/TokyoScene
   online: true
