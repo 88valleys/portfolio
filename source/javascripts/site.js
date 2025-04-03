@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initSmoothScroll();
   initContactForm();
   initTranslation();
+  initProjectImageClick();
 });
 
 function initTranslation() {
@@ -326,5 +327,20 @@ function initContactForm() {
           text: 'Failed to send message. Please try again later.',
         });
       });
+  });
+}
+
+function initProjectImageClick() {
+  const projectImages = document.querySelectorAll('.project-image[data-url]');
+
+  projectImages.forEach((image) => {
+    image.addEventListener('click', () => {
+      const url = image.getAttribute('data-url');
+      console.log('Image clicked, URL:', url); // Debugging
+
+      if (url) {
+        window.open(url, '_blank'); // Open the link in a new tab
+      }
+    });
   });
 }

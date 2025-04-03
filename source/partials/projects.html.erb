@@ -7,7 +7,11 @@
           <div class="cards">
             <% data.projects.each do |project| %>
               <div class="card-product">
-                <%= image_tag project.image, alt: "project image" %>
+                <% if project['video'] %>
+                  <%= image_tag project.image, alt: "project image", class: 'project-image', data: { url: project['video'] } %>
+                <% else %>
+                  <%= image_tag project.image, alt: "project image", class: 'project-image' %>
+                <% end %>                
                 <div class="card-product-infos w-100">
                   <div class="d-flex justify-content-between align-items-center">
                     <h2><%= project.name %></h2>
