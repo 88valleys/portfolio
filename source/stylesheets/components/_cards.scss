@@ -8,7 +8,7 @@
 
 .card-product {
   overflow: hidden;
-  height: 395px;  
+  height: 395px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -18,7 +18,7 @@
 }
 
 .card-product img {
-  height: 280px;  
+  height: 280px;
   width: 100%;
   object-fit: cover;
 }
@@ -32,7 +32,7 @@
 .card-product p {
   font-size: 12px;
   line-height: 1.4;
-  opacity: .7;
+  opacity: 0.7;
   margin-bottom: 0;
   margin-top: 8px;
 }
@@ -61,7 +61,7 @@
   font-size: 20px;
   &:hover {
     cursor: pointer;
-    color: $gray
+    color: $gray;
   }
 }
 
@@ -106,5 +106,18 @@
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
   }
 }
