@@ -66,6 +66,22 @@
   }
 }
 
+.btn-secondary {
+  background-color: #df44568d;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.btn-secondary:hover {
+  background-color: #df44568d;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  pointer-events: none;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
