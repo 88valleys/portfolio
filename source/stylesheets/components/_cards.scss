@@ -8,7 +8,7 @@
 
 .card-product {
   overflow: hidden;
-  height: 395px;
+  height: 440px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -38,6 +38,7 @@
 }
 
 .card-product .card-product-infos {
+  height: 200px;
   padding: 16px;
   position: relative;
   &:hover {
