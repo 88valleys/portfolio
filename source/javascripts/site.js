@@ -15,7 +15,6 @@ function initTranslation() {
       banner_description:
         'A junior <span>full-stack web developer</span> based in Tokyo, Japan. With a background in digital design and media, I specialise in <span>designing</span> and <span>coding</span> visually appealing and immersive user experiences. ✨',
       download_cv: 'Download CV',
-
       navbar_projects: 'Projects',
       navbar_about: 'About',
       navbar_contact: 'Contact',
@@ -23,12 +22,12 @@ function initTranslation() {
       mobile_menu_about: 'About',
       mobile_menu_contact: 'Contact',
       mobile_credit: `Built with ❤︎ by Senie using <a href="https://middlemanapp.com/" target="_blank">Middleman</a>.`,
-
       projects_title: 'Projects 👩🏻‍💻',
-
       about_title: 'About me 🌻',
       about_paragraph_1:
         'Hello, thank you for dropping by! I’m <span>Senie</span> – Melbourne, Australia-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.',
+      about_paragraph_1_2:
+        'During my time in LeWagon, I led the development of <span>TokyoScene</span>, a music event aggregator that recommends live gigs in Tokyo based on user music preferences and Spotify data. This project allowed me to combine my technical skills with my passion for music and user experience, focusing on data-driven recommendations and seamless UI/UX design. I continue to work on TokyoScene in a small team, enhancing its features and expanding its functionality.',
       about_paragraph_2:
         "In February 2025, I completed <span class='highlight'>Japan Product Camp</span>, an intensive program on <span>product design, user research, and growth strategies</span>. I learned about product design with the <span>user in mind</span>, conducting user interviews, data analysis, and usability testing to inform product decisions.",
       about_paragraph_3:
@@ -60,11 +59,12 @@ function initTranslation() {
       mobile_menu_about: '私について',
       mobile_menu_contact: 'お問い合わせ',
       mobile_credit: `❤︎ 心を込めて Senie が <a href="https://middlemanapp.com/" target="_blank">Middleman</a> を使用して開発しました。`,
-
       projects_title: 'プロジェクト 👩🏻‍💻',
       about_title: '私について 🌻',
       about_paragraph_1:
         'こんにちは、ご訪問ありがとうございます！<span>セニー</span>です。メルボルン（オーストラリア）出身、東京在住の<span>フルスタックウェブ開発者</span>です。レスポンシブでユーザーフレンドリーなウェブアプリケーションの開発に情熱を持っています。',
+      about_paragraph_1_2:
+        'LeWagonでの期間中、<span>TokyoScene</span>の開発を主導しました。このアプリは、ユーザーの音楽の好みやSpotifyのデータに基づいて、東京でのライブ音楽イベントをおすすめする音楽イベントアグリゲーターです。このプロジェクトでは、私の技術的スキルと音楽やユーザー体験への情熱を融合させ、データ駆動型のおすすめ機能とシームレスなUI/UXデザインに注力しました。現在も小規模なチームでTokyoSceneの開発を続けており、機能の強化や拡張に取り組んでいます。',
       about_paragraph_2:
         "2025年2月、<span class='highlight'>Japan Product Camp</span>を修了しました。この集中プログラムでは、<span>プロダクトデザイン、ユーザーリサーチ、グロース戦略</span>について学びました。<span>ユーザー視点</span>でのプロダクトデザインを学び、ユーザーインタビュー、データ分析、ユーザビリティテストを実施し、プロダクトの意思決定に役立てました。",
       about_paragraph_3:
@@ -102,6 +102,7 @@ function initTranslation() {
 
     about_title: document.getElementById('about-title'),
     about_paragraph_1: document.getElementById('about-paragraph-1'),
+    about_paragraph_1_2: document.getElementById('about-paragraph-1-2'),
     about_paragraph_2: document.getElementById('about-paragraph-2'),
     about_paragraph_3: document.getElementById('about-paragraph-3'),
     about_paragraph_4: document.getElementById('about-paragraph-4'),
@@ -151,6 +152,8 @@ function initTranslation() {
     elements.about_title.innerHTML = translations[language].about_title;
     elements.about_paragraph_1.innerHTML =
       translations[language].about_paragraph_1;
+    elements.about_paragraph_1_2.innerHTML =
+      translations[language].about_paragraph_1_2;
     elements.about_paragraph_2.innerHTML =
       translations[language].about_paragraph_2;
     elements.about_paragraph_3.innerHTML =
