@@ -8,7 +8,7 @@
 
 .card-product {
   overflow: hidden;
-  height: 440px;
+  height: 420px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -115,10 +115,5 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  cursor: pointer;
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  }
 }
