@@ -1,11 +1,14 @@
+// Layout-related styles
 .custom-margin {
   margin: 0 auto;
-}
 
-@media (min-width: 992px) {
-  .custom-margin {
+  @media (min-width: 992px) {
     margin-left: 30px;
   }
+}
+
+.about {
+  padding-bottom: 50px;
 }
 
 .about-pic {
@@ -14,17 +17,14 @@
   border-radius: 5%;
 }
 
-.about {
-  padding-bottom: 50px;
-}
-
+// Link styles
 .highlight-link {
-  color: #df4456ea;
+  color: $primary-color;
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease, font-weight 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 
   &:hover {
-    color: #ea818d;
+    color: $primary-hover-color;
     text-decoration: underline;
     font-weight: bold;
   }
