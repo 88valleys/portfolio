@@ -2,11 +2,12 @@
   position: Product Manager / Lead Front-End Developer
   skillstack:
     - Ruby on Rails
-    - Spotify API
     - JavaScript
     - HTML/CSS
+    - Spotify API
+    - OpenStreet API
   description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.
-  description_jp: TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。Le Wagonのデモデイで、私がグループと共にプレゼンテーションをリードしました。
+  description_jp: TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。
   image: projects/TokyoSceneMockup.png
   video: https://www.youtube.com/watch?v=D2I2us_6M2c&t=1493s
   url: https://www.tokyoscene.me
