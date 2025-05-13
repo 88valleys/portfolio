@@ -51,18 +51,18 @@
 
 .card-skills {
   display: block;
-  margin-top: 2.5px;
+  margin-top: 4px;
 }
 
 .external-link {
   opacity: 1;
-  color: $gray;
-  transition: opacity 1s;
+  color: #5e5e5e;
+  transition: opacity 0.3s ease, color 0.3s ease;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   &:hover {
     cursor: pointer;
-    color: $gray;
+    color: #ababab;
   }
 }
 
