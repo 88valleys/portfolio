@@ -8,7 +8,7 @@
 
 .card-product {
   overflow: hidden;
-  height: 395px;
+  height: 420px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -38,13 +38,9 @@
 }
 
 .card-product .card-product-infos {
+  height: 200px;
   padding: 16px;
   position: relative;
-  &:hover {
-    .external-link {
-      opacity: 1;
-    }
-  }
 }
 
 .card-links {
@@ -53,16 +49,37 @@
   right: 16px;
 }
 
+.card-skills {
+  display: block;
+  margin-top: 4px;
+}
+
 .external-link {
-  opacity: 0;
-  color: $gray;
-  transition: opacity 1s;
+  opacity: 1;
+  color: #5e5e5e;
+  transition: opacity 0.3s ease, color 0.3s ease;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   &:hover {
     cursor: pointer;
-    color: $gray;
+    color: #ababab;
   }
+}
+
+.btn-secondary {
+  background-color: #df44568d;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.btn-secondary:hover {
+  background-color: #df44568d;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  pointer-events: none;
 }
 
 // Smallest device
@@ -90,9 +107,9 @@
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-  .external-link {
-    opacity: 0;
-  }
+  // .external-link {
+  //   opacity: 0;
+  // }
 }
 
 // Large devices (desktops, 992px and up)
@@ -114,10 +131,5 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  cursor: pointer;
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  }
 }

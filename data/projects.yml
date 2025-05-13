@@ -1,6 +1,13 @@
 - name: TokyoScene
-  description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres. Click on the above picture to watch an app demo, which I led the presentation for during Le Wagon's demo day with my group.
-  description_jp: TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。Le Wagonのデモデイで、私がグループと共にプレゼンテーションをリードしました。上の画像をクリックするとアプリのデモをご覧いただけます。
+  position: Product Manager / Lead Front-End Developer
+  skillstack:
+    - Ruby on Rails
+    - JavaScript
+    - HTML/CSS
+    - Spotify API
+    - OpenStreet API
+  description: A web-based event aggregator using Ruby on Rails, that utilises Spotify data to recommend live music events in Tokyo based on a user's favourite artists and genres.
+  description_jp: TokyoSceneは、Ruby on Railsで構築されたイベント集約アプリです。Spotifyのデータを活用し、ユーザーのお気に入りのアーティストやジャンルに基づいて、東京のライブ音楽イベントをおすすめします。
   image: projects/TokyoSceneMockup.png
   video: https://www.youtube.com/watch?v=D2I2us_6M2c&t=1493s
   url: https://www.tokyoscene.me
@@ -8,6 +15,11 @@
   online: true
 
 - name: USpeak4Me
+  position: Lead Front-End Developer
+  skillstack:
+    - Ruby on Rails
+    - JavaScript
+    - HTML/CSS
   description: USpeak4Me is a marketplace app using Ruby on Rails, designed to connect foreign residents in Japan with professional interpreters.
   description_jp: USpeak4Meは、Ruby on Railsで開発されたマーケットプレイスアプリです。日本に住む外国人とプロの通訳者をつなぐことを目的としています。
   image: projects/USpeak4MeMockup.png
@@ -16,6 +28,10 @@
   online: true
 
 - name: Soundmap Tokyo
+  skillstack:
+    - React
+    - JavaScript
+    - HTML/CSS
   description: Built using React, SoundMap Tokyo is a web application that catalogs live music venues across Tokyo, organising them by the genres they feature, available equipment, nearest station, and venue website.
   description_jp: Reactで構築されたSoundMap Tokyoは、東京のライブ音楽会場をカタログ化し、ジャンル、設備、最寄り駅、公式サイトなどで整理するウェブアプリケーションです。
   image: projects/soundmap.png
@@ -24,12 +40,26 @@
   online: true
 
 - name: WealthWise
+  skillstack:
+    - Figma
   description: Developed during my time at Japan Product Camp 2024, WealthWise is a fintech product concept that gamifies financial learning for young professionals in Japan. As part of a team, I contributed to the UI design, collaborating in Figma, conducting user research, and developing WealthWise's product strategy.
   description_jp: WealthWiseは、2024年のJapan Product Campで開発された、若手プロフェッショナル向けのゲーミフィケーション型金融学習フィンテック製品のコンセプトです。チームの一員として、FigmaでのUIデザイン、ユーザーリサーチ、製品戦略の開発に貢献しました。
   image: projects/wealthwise.png
-  github: https://www.figma.com/proto/gBst8ala7g5z7Y1Dzzpawm/Weathwise-Ed?page-id=0%3A1&node-id=54-3222&t=Hx7LySmxOPGUFwLX-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=54%3A3222
+  figma: https://www.figma.com/proto/gBst8ala7g5z7Y1Dzzpawm/Weathwise-Ed?page-id=0%3A1&node-id=54-3222&t=Hx7LySmxOPGUFwLX-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=54%3A3222
   url: https://drive.google.com/file/d/1vaxgdzVGTfiPEMwBwX_nZF4JXlRhP8Cu/view?usp=sharing
   online: true
+
+- name: CrepeGifter
+  position: UX/UI Designer
+  skillstack:
+    - Photoshop
+    - Illustrator
+    - Figma
+  description: A mobile app concept designed to let users customise cute crepes using drag-and-drop toppings, then order them in real life and/or send them as gifts. Inspired by cute culture, the app focuses on creative food expression for a young audience.
+  description_jp: CrepeGifterは、ユーザーが可愛いクレープをカスタマイズして実際に注文し、ギフトとして友達に贈ることができるモバイルアプリのコンセプトです。日本のカワイイ文化に影響を受けたこのアプリは、若い世代の自己表現とフードデザインの楽しさを融合しています。
+  image: projects/CrepeGifterMockup.png
+  figma: https://www.figma.com/design/RsuqN5SUMLWM1sKE3O0MCc/CrepeGifter?node-id=0-1&t=wdtH0XhKsPEAlefJ-1
+  online: false
 # - name: Airbnb
 #   description: Decent description of the app
 #   image: projects/placeholder.png

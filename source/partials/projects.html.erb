@@ -7,24 +7,39 @@
           <div class="cards">
             <% data.projects.each do |project| %>
               <div class="card-product">
-                <% if project['video'] %>
-                  <%= image_tag project.image, alt: "project image", class: 'project-image', data: { url: project['video'] } %>
-                <% else %>
-                  <%= image_tag project.image, alt: "project image", class: 'project-image' %>
-                <% end %>                
+                <%= image_tag project.image, alt: "project image", class: 'project-image' %>
                 <div class="card-product-infos w-100">
                   <div class="d-flex justify-content-between align-items-center">
                     <h2><%= project.name %></h2>
                     <div class="card-links">
-                      <% link_to project.github, class: 'external-link', target: '_blank' do %>
-                        <i class="fa-brands fa-github"></i>
+                      <% if project.video?  %>
+                        <% link_to project.video, class: 'external-link', target: '_blank' do %>
+                          <i class="fa-brands fa-youtube"></i>
+                        <% end %>
+                      <% end %>
+                      <% if project.github?  %>
+                        <% link_to project.github, class: 'external-link', target: '_blank' do %>
+                          <i class="fa-brands fa-github"></i>
+                        <% end %>
+                      <% end %>
+                      <% if project.figma? %>
+                        <% link_to project.figma, class: 'external-link', target: '_blank' do %>
+                          <i class="fa-brands fa-figma"></i>
+                        <% end %>
                       <% end %>
                       <% if project.online?  %>
                         <% link_to project.url, class: 'external-link', target: '_blank' do %>
-                          <i class="fas fa-external-link-alt"></i>
+                          <i class="fa-solid fa-link"></i>
                         <% end %>
                       <% end %>
                     </div>
+                  </div>
+                  <div class="card-skills">
+                    <% if project['skillstack'] %>
+                      <% project['skillstack'].each do |skill| %>
+                        <span class="btn btn-secondary" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: 0.3rem; --bs-btn-font-size: .75rem;"><%= skill %></span>
+                      <% end %>
+                    <% end %>
                   </div>
                   <p class="project-description" data-description-en="<%= project['description'] %>" 
 data-description-jp="<%= project['description_jp'] %>"><%= project.description %></p>
