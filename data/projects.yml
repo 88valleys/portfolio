@@ -60,6 +60,22 @@
   image: projects/CrepeGifterMockup.png
   figma: https://www.figma.com/proto/RsuqN5SUMLWM1sKE3O0MCc/CrepeGifter?page-id=0%3A1&node-id=13-28&viewport=1383%2C632%2C0.39&t=m2mbZlXBIRyi7gq2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=13%3A28
   online: false
+
+- name: The Design Externship – Article Parser
+  position: Front-End Developer
+  skillstack:
+    - JavaScript
+    - Node.js
+    - OpenAI API
+    - JSON
+    - Prompt Engineering
+  description: As part of my internship with Brown Juice Co, I built a Node.js script for their product, The Design Externship, to parse curriculum articles and generate article summaries using OpenAI. I focused on performance, edge case handling, and minimising API costs. The tool helps busy students grasp key insights without reading full articles.
+  description_jp: Brown Juice Coのインターンシップの一環として、The Design Externshipのカリキュラム記事を解析し、OpenAIで要約を生成するNode.jsスクリプトを開発しました。パフォーマンス、例外処理、APIコストの最小化に重点を置いて設計。忙しい学習者が記事を読まなくても要点を素早く理解できるようにサポートします。
+  image: projects/DesignExternshipParser.png
+  url: https://brownjuice.co/study
+  online: true
+
+
 # - name: Airbnb
 #   description: Decent description of the app
 #   image: projects/placeholder.png
