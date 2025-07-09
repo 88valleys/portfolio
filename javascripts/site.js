@@ -13,7 +13,7 @@ function initTranslation() {
     en: {
       banner_title: "Hello, I'm Senie 👋",
       banner_description:
-        'A junior <span>full-stack web developer</span> based in Tokyo, Japan. With a background in digital design and media, I specialise in <span>designing</span> and <span>coding</span> visually appealing and immersive user experiences. ✨',
+        'A <span>full-stack web developer</span> based in Tokyo, Japan. With a background in digital design and media, I specialise in <span>designing</span> and <span>coding</span> visually appealing and immersive user experiences. ✨',
       download_cv: 'Download CV',
       navbar_projects: 'Portfolio',
       navbar_about: 'About',
@@ -49,7 +49,7 @@ function initTranslation() {
     jp: {
       banner_title: 'こんにちは、セニーです 👋',
       banner_description:
-        '東京を拠点に活動するジュニア<span>フルスタックウェブ開発者</span>です。デジタルデザインとメディアのバックグラウンドを活かし、<span>デザイン</span>と<span>コーディング</span>を通じて、視覚的に魅力的で没入感のあるユーザー体験を提供することを得意としています。✨',
+        '東京を拠点に活動する<span>フルスタックウェブ開発者</span>です。デジタルデザインとメディアのバックグラウンドを活かし、<span>デザイン</span>と<span>コーディング</span>を通じて、視覚的に魅力的で没入感のあるユーザー体験を提供することを得意としています。✨',
       download_cv: '履歴書をダウンロード',
       navbar_projects: 'ポートフォリオ',
       navbar_about: '私について',
