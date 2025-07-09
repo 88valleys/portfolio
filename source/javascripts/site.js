@@ -177,6 +177,8 @@ function initTranslation() {
 
     elements.footer_title.innerHTML = translations[language].footer_title;
 
+    updateDownloadCV(language);
+
     if (language === 'jp') {
       elements.footer_title.classList.add('footer-title-small');
     } else {
@@ -198,6 +200,21 @@ function initTranslation() {
       translate(language);
     });
   });
+}
+
+function updateDownloadCV(language) {
+  const downloadCV = document.getElementById('download_cv');
+  if (!downloadCV) return;
+
+  if (language === 'jp') {
+    downloadCV.href = '/files/Senie_Calalang_CV-JP.pdf';
+    downloadCV.download = 'Senie_Calalang_CV-JP.pdf';
+    downloadCV.textContent = '履歴書をダウンロード';
+  } else {
+    downloadCV.href = '/files/Senie_Calalang_CV-EN.pdf';
+    downloadCV.download = 'Senie_Calalang_CV-EN.pdf';
+    downloadCV.textContent = 'Download CV';
+  }
 }
 
 // Typewriter function for banner title
