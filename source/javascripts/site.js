@@ -13,7 +13,7 @@ function initTranslation() {
     en: {
       banner_title: "Hello, I'm Senie 👋",
       banner_description:
-        'A <span>full-stack web developer</span> based in Tokyo, Japan. With a background in digital design and media, I specialise in <span>designing</span> and <span>coding</span> visually appealing and immersive user experiences. ✨',
+        `I'm a <span>UI/UX designer</span> based in Tokyo, Japan. Drawing from my background in <span>web development</span> and <span>digital media</span>, I like shaping products that make complex ideas simple and easy for people to navigate.`,
       download_cv: 'Download CV',
       navbar_projects: 'Portfolio',
       navbar_about: 'About',
@@ -25,16 +25,29 @@ function initTranslation() {
       projects_title: 'Portfolio 👩🏻‍💻',
       about_title: 'About me 🌻',
       about_paragraph_1:
-        'Hello, thank you for stopping by! I’m <span>Senie</span> – Melbourne, Australia-raised, Tokyo-based. I’m a <span>full-stack web developer</span> passionate about creating responsive, user-friendly web applications. I graduated from <span>Le Wagon Tokyo’s web development bootcamp</span> in September 2024, where I learned Ruby on Rails, JavaScript, HTML/CSS, and React, building applications from the ground up.',
-      about_paragraph_1_2: `During my time in Le Wagon, I led the development of <span><em><a href="https://www.tokyoscene.me/"  target='_blank' class='highlight-link'>TokyoScene</span></a></em>, a music event aggregator that recommends live gigs in Tokyo based on user music preferences and Spotify data. This project allowed me to combine my technical skills with my passion for music and user experience, focusing on data-driven recommendations and seamless UI/UX design. I continue to work on <em>TokyoScene</em> in a small team, enhancing its features and expanding its functionality.`,
-      about_paragraph_2:
-        "In February 2025, I completed <span class='highlight'><a href='https://japanproductcamp.io/' target='_blank' class='highlight-link'>Japan Product Camp</span></a>, an intensive program on <span>product design, user research, and growth strategies</span>. I learned about product design with the <span>user in mind</span>, conducting user interviews, data analysis, and usability testing to inform product decisions.",
+        `Hello, thanks for stopping by! I’m Senie, Melbourne, Australia-raised, Tokyo-based. 
+        I’m a UX/UI Designer at <span><a href="https://kortvaluta.com/" target="_blank" class="highlight-link">Kort Valuta</a></span>. `,
+      about_paragraph_2: 
+        `With a background in digital media and customer experience, I’ve always been curious about how people interact with products and systems. 
+        That curiosity first brought me to Japan on the <a href="https://jetprogramme.org/en/" target="_blank" class="highlight-link">JET Programme</a>, where working across cultures deepened my interest in design for diverse users. `,
       about_paragraph_3:
-        "Currently, I'm interning as a <span class='highlight'>front-end developer</span> at <a href='https://brownjuice.co/' target='_blank' class='highlight-link'><span>Brown Juice Co</span></a>, where I build AI-powered features and improve user experience for their product, <em><a href='https://brownjuice.co/study/' target='_blank' class='highlight-link'>The Design Externship</a></em>.",
+        `To develop my skills further, I completed <a href="https://www.lewagon.com/tokyo" class="highlight-link"
+        target="_blank">Le Wagon Tokyo</a>’s web development bootcamp.
+        During that time, I led the design and development of 
+        <a href="https://www.tokyoscene.me/" target="_blank" class="highlight-link">TokyoScene</a>, 
+        a live music event aggregator using Spotify data to recommend gigs in Tokyo. 
+        This project combined my love of live music with data-driven product and UI/UX thinking.  `,
       about_paragraph_4:
-        "With a background in <span>Digital Media & Design</span>, I love crafting clean, user-friendly interfaces. I'm eager to collaborate with a creative team to build products that blend design and technology.",
+        `Building on my experience at Le Wagon, I joined <a href="https://japanproductcamp.io/" target="_blank" class="highlight-link">Japan Product Camp</a>
+        to deepen my understanding of product design, user research, and growth strategy. 
+        From there, I interned on design and development projects before joining Kort Valuta.`,
       about_paragraph_5:
-        'Outside of work, I play bass, explore Tokyo’s live music scene, enjoy video games, reading and practice yoga. I’m always <span>open to new projects</span>, so feel free to reach out! 🚀',
+        `As a UX/UI designer, my goal is to create simple, intuitive experiences for users, 
+        while also bridging communication between design and development with my background in both code and product design.`,
+      about_paragraph_6:
+        `Outside of work, I play bass, explore Tokyo’s live music scene, read contemporary books (if you have any recommendations, let me know!), and unwind with video games (JRPGs!) and yoga. `,
+      about_paragraph_7:
+        `If you’re curious about building something together, or just want to have a chat, feel free to connect or reach out! Looking forward to chatting with you soon :)`,
       tech_stack_title: 'Tech Stack 💻',
 
       social_title: "Let's connect! 💫",
@@ -48,8 +61,8 @@ function initTranslation() {
     },
     jp: {
       banner_title: 'こんにちは、セニーです 👋',
-      banner_description:
-        '東京を拠点に活動する<span>フルスタックウェブ開発者</span>です。デジタルデザインとメディアのバックグラウンドを活かし、<span>デザイン</span>と<span>コーディング</span>を通じて、視覚的に魅力的で没入感のあるユーザー体験を提供することを得意としています。✨',
+    banner_description:
+      `東京を拠点に活動する<span>UI/UXデザイナー</span>です。<span>ウェブ開発</span>と<span>デジタルメディア</span>のバックグラウンドを活かし、複雑なアイデアをシンプルにして、人が直感的に使えるプロダクトをつくるのが好きです。`,
       download_cv: '履歴書をダウンロード',
       navbar_projects: 'ポートフォリオ',
       navbar_about: '私について',
@@ -60,27 +73,36 @@ function initTranslation() {
       mobile_credit: `❤︎ 心を込めて Senie が <a href="https://middlemanapp.com/" target="_blank">Middleman</a> を使用して開発しました。`,
       projects_title: 'ポートフォリオ 👩🏻‍💻',
       about_title: '私について 🌻',
-      about_paragraph_1:
-        'こんにちは、ご訪問ありがとうございます！<span>セニー</span>です。メルボルン（オーストラリア）出身、東京在住の<span>フルスタックウェブ開発者</span>です。レスポンシブでユーザーフレンドリーなウェブアプリケーションの開発に情熱を持っています。',
-      about_paragraph_1_2:
-        "Le Wagonでの期間中、<span><em><a href='https://www.tokyoscene.me/'  target='_blank' class='highlight-link'>TokyoScene</span></a></em>の開発を主導しました。このアプリは、ユーザーの音楽の好みやSpotifyのデータに基づいて、東京でのライブ音楽イベントをおすすめする音楽イベントアグリゲーターです。このプロジェクトでは、私の技術的スキルと音楽やユーザー体験への情熱を融合させ、データ駆動型のおすすめ機能とシームレスなUI/UXデザインに注力しました。現在も小規模なチームで<em>TokyoScene</em>の開発を続けており、機能の強化や拡張に取り組んでいます。",
-      about_paragraph_2:
-        "2025年2月、<a href='https://japanproductcamp.io/' target='_blank' class='highlight-link'>Japan Product Camp</span></a>を修了しました。この集中プログラムでは、<span>プロダクトデザイン、ユーザーリサーチ、グロース戦略</span>について学びました。<span>ユーザー視点</span>でのプロダクトデザインを学び、ユーザーインタビュー、データ分析、ユーザビリティテストを実施し、プロダクトの意思決定に役立てました。",
-      about_paragraph_3:
-        "現在、<a href='https://brownjuice.co/' target='_blank' class='highlight-link'><span>Brown Juice Co</span></a>で<span class='highlight'>フロントエンド開発者</span>としてインターンをしています。自社プロダクト<em><a href='https://brownjuice.co/study/' target='_blank' class='highlight-link'>The Design Externship</a></em>にて、AI機能の実装やユーザー体験の向上に取り組んでいます。",
-      about_paragraph_4:
-        '<span>デジタルメディア＆デザイン</span>のバックグラウンドを活かし、クリーンで使いやすいインターフェースを設計することに情熱を持っています。デザインとテクノロジーを融合させた魅力的なプロダクトを創るために、クリエイティブなチームと協力することを楽しみにしています。',
-      about_paragraph_5:
-        '仕事の外では、ベースを弾いたり、東京のライブミュージックシーンを探索したり、ビデオゲームを楽しんだり、読書やヨガを練習したりしています。常に<span>新しいプロジェクトにオープン</span>なので、お気軽にご連絡ください！🚀',
-      tech_stack_title: '技術スタック 💻',
-      social_title: 'つながりましょう！💫',
-      social_paragraph:
-        'お気軽にご連絡ください！コラボレーションに興味がある方、アイデアを共有したい方、またはコーヒーを飲みながらお話ししたい方、ぜひつながりましょう。SNSやメッセージでの交流も大歓迎です！',
-      contact_placeholder_name: '名前',
-      contact_placeholder_email: 'メールアドレス',
-      contact_placeholder_message: 'メッセージを書く',
-      contact_button: 'メッセージを送信',
-      footer_title: `❤︎ 心を込めて Senie が <a href="https://middlemanapp.com/" target="_blank">Middleman</a> を使用して開発しました。`,
+      about_paragraph_1: 
+        `こんにちは、プロフィールをご覧いただきありがとうございます！メルボルンで育ち、現在は東京を拠点に活動しているSenieです。 
+        <span><a href="https://kortvaluta.com/" target="_blank" class="highlight-link">Kort Valuta</a></span>でUX/UIデザイナーとして働いています。`,
+      about_paragraph_2: 
+        `デジタルメディアとカスタマーエクスペリエンスのバックグラウンドを持ち、常に「人がプロダクトやシステムとどう関わるのか」に関心を持ってきました。 
+        その探究心から<a href="https://jetprogramme.org/en/" target="_blank" class="highlight-link">JETプログラム</a>で日本に来て、異文化での経験を通じて多様なユーザーを意識したデザインにさらに興味を持つようになりました。`,
+      about_paragraph_3: 
+        `スキルをさらに伸ばすため、<a href="https://www.lewagon.com/tokyo" class="highlight-link" target="_blank">Le Wagon Tokyo</a>のWeb開発ブートキャンプを修了しました。
+        その期間に、Spotifyのデータを活用して東京のライブイベントをおすすめする
+        <a href="https://www.tokyoscene.me/" target="_blank" class="highlight-link">TokyoScene</a>というアプリのデザインと開発をリードしました。 
+        このプロジェクトでは、音楽への情熱とデータドリブンなプロダクト／UI/UXデザインを組み合わせることができました。`,
+    about_paragraph_4: 
+      `<a href="https://japanproductcamp.io/" target="_blank" class="highlight-link">Japan Product Camp</a>にも参加し、プロダクトデザイン、ユーザーリサーチ、グロース戦略についてさらに理解を深めました。 
+      その後、デザインと開発のインターンを経て、Kort Valutaに入社しました。`,
+    about_paragraph_5: 
+      `UX/UIデザイナーとして、ユーザーにとってシンプルで直感的な体験を作ることを目指しています。 
+      また、コードとプロダクトデザインの両方の経験を活かし、デザインと開発のコミュニケーションをつなぐ役割も担っています。`,
+    about_paragraph_6: 
+      `仕事以外では、ベースを弾いたり、東京のライブハウスを巡ったり、本を読んだり（おすすめがあればぜひ教えてください！）、JRPGのゲームやヨガでリフレッシュしています。`,
+    about_paragraph_7: 
+      `もし一緒に何かを作ってみたい、または気軽にお話ししたいと思っていただけたら、ぜひご連絡ください！お話しできるのを楽しみにしています。`,
+    tech_stack_title: '技術スタック 💻',
+    social_title: 'つながりましょう！💫',
+    social_paragraph:
+      'お気軽にご連絡ください！コラボレーションに興味がある方、アイデアを共有したい方、またはコーヒーを飲みながらお話ししたい方、ぜひつながりましょう。SNSやメッセージでの交流も大歓迎です！',
+    contact_placeholder_name: '名前',
+    contact_placeholder_email: 'メールアドレス',
+    contact_placeholder_message: 'メッセージを書く',
+    contact_button: 'メッセージを送信',
+    footer_title: `❤︎ 心を込めて Senie が <a href="https://middlemanapp.com/" target="_blank">Middleman</a> を使用して開発しました。`,
     },
   };
 
@@ -101,11 +123,13 @@ function initTranslation() {
 
     about_title: document.getElementById('about-title'),
     about_paragraph_1: document.getElementById('about-paragraph-1'),
-    about_paragraph_1_2: document.getElementById('about-paragraph-1-2'),
     about_paragraph_2: document.getElementById('about-paragraph-2'),
     about_paragraph_3: document.getElementById('about-paragraph-3'),
     about_paragraph_4: document.getElementById('about-paragraph-4'),
     about_paragraph_5: document.getElementById('about-paragraph-5'),
+    about_paragraph_6: document.getElementById('about-paragraph-6'),
+    about_paragraph_7: document.getElementById('about-paragraph-7'),
+
 
     tech_stack_title: document.getElementById('tech-stack-title'),
 
@@ -124,8 +148,6 @@ function initTranslation() {
     elements.banner_title.innerHTML = translations[language].banner_title;
     elements.banner_description.innerHTML =
       translations[language].banner_description;
-    elements.download_cv.innerHTML = translations[language].download_cv;
-
     elements.navbar_projects.innerHTML = translations[language].navbar_projects;
     elements.navbar_about.innerHTML = translations[language].navbar_about;
     elements.navbar_contact.innerHTML = translations[language].navbar_contact;
@@ -151,8 +173,6 @@ function initTranslation() {
     elements.about_title.innerHTML = translations[language].about_title;
     elements.about_paragraph_1.innerHTML =
       translations[language].about_paragraph_1;
-    elements.about_paragraph_1_2.innerHTML =
-      translations[language].about_paragraph_1_2;
     elements.about_paragraph_2.innerHTML =
       translations[language].about_paragraph_2;
     elements.about_paragraph_3.innerHTML =
@@ -161,6 +181,10 @@ function initTranslation() {
       translations[language].about_paragraph_4;
     elements.about_paragraph_5.innerHTML =
       translations[language].about_paragraph_5;
+    elements.about_paragraph_6.innerHTML =
+      translations[language].about_paragraph_6;
+    elements.about_paragraph_7.innerHTML =
+      translations[language].about_paragraph_7;
     elements.tech_stack_title.innerHTML =
       translations[language].tech_stack_title;
 
